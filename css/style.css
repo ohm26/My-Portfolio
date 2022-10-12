@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Exo 2', sans-serif;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    overflow-x: hidden;
+    height: 2000px;
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 .1rem .5rem rgba(51, 51, 51, .5);
+}
+
+.header img {
+    width: 100px;
+
+
+}
+
+.header a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #333;
+
+}
+
+.fa-bars {
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+.logo h1 {
+    margin-bottom: 0;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbar ul li {
+    margin: 0 1.5rem;
+
+}
+
+.navbar ul li a {
+    font-family: 'Bungee Spice', cursive;
+}
+
+.navbar ul li a:hover {
+    padding-bottom: .3rem;
+    border-bottom: .2rem solid orangered;
+}
+
+/*home section*/
+.home {
+    background: url(../images/laptop.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.typing-text {
+    font-family: 'Bungee Spice', cursive;
+}
+
+.home h2 {
+    font-size: 3rem;
+    font-family: 'Rubik Dirt', cursive;
+    color: #333
+}
+
+.home h1 {
+    font-size: 4rem;
+    font-family: 'Rubik Dirt', cursive;
+    color: #333;
+    margin: 2rem 0;
+    text-shadow: .1rem .1rem .1rem rgba(225, 225, 255, .9);
+}
+
+.home span {
+    color: orangered;
+    margin: 0;
+}
+
+.home button {
+    height: 4rem;
+    width: 16rem;
+    background: rgb(82, 79, 79);
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Paytone One', sans-serif;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow: 0 .5rem 1rem rgba(51, 51, 51, .3);
+}
+
+
+/*about section*/
+#about {
+    width: 100vw;
+    min-height: 70vh;
+    background-color: white;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 6rem;
+    font-weight: 500;
+    font-family: 'Bungee Spice', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(82, 79, 79);
+    border-bottom: .5rem soild #333;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+
+}
+
+.about-container {
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 50rem));
+    place-items: center;
+    place-content: center;
+}
+
+.about-content {
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+.about-content-text {
+    font-size: 1.6rem;
+    font-family: 'Rubik Dirt', cursive;
+    text-align: justify;
+    color: rgb(82, 79, 79);
+    line-height: 1.4;
+    margin-bottom: 1.6rem;
+}
+
+.about-skills {
+    font-size: 1.5rem;
+
+
+}
+
+.about-skills span {
+    font-style: normal;
+    border-bottom: .5rem solid #333;
+    font-family: 'Gloria Hallelujah', cursive;
+
+}
+
+.about-skills p {
+    font-family: 'Gloria Hallelujah', cursive;
+    line-height: 3.5rem;
+}
+
+.skills {
+    margin-bottom: .6rem;
+}
+
+.resume {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    font-family: 'Bungee Spice', cursive;
+    letter-spacing: .2rem;
+    color: white;
+    background: rgb(82, 79, 79);
+    ;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0.8rem 0.8rem 0.8rem rgb(187, 187, 187);
+    transition: .5s ease;
+}
+
+.resume:hover {
+    color: transparent;
+    background: orangered;
+    text-shadow: .1rem .1rem .1rem black;
+    transform: scale(.95);
+    text-decoration: none;
+}
+
+about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*projects section*/
+#projects {
+    width: 100vm;
+    min-height: 100vh;
+    background: url(../images/19220.jpg);
+    background-size: cover;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-pro {
+    font-family: 'Rubik Dirt', cursive;
+    ;
+    font-size: 2.5rem;
+    color: #333;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.all-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 150rem;
+    padding: 3rem;
+}
+
+.project-card {
+    width: 35rem;
+    margin: 1rem;
+    padding: .5rem;
+    box-shadow: 0.8rem 0.8rem 0.8rem rgb(187, 187, 187);
+    background-color: #fff;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    object-fit: contain;
+    transition: .3s ease;
+    filter: saturate(.5);
+}
+
+.project-card img a {
+    filter: saturate(1);
+}
+
+.project-btn {
+    width: 85%;
+    margin: 5px auto;
+    text-align: center;
+    margin-bottom: .5rem;
+
+}
+
+.project-btn a {
+    display: inline-block;
+
+    font-family: 'Paytone One', sans-serif;
+    background-color: #333;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+
+    color: #fff;
+    padding: .5rem 2rem;
+    border-radius: 8px;
+
+}
+
+.project-btn a :first-of-type {
+    margin-right: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    font-family: 'Bungee Spice', cursive;
+    letter-spacing: .2rem;
+    color: white;
+    background: rgb(82, 79, 79);
+    text-transform: capitalize;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0.8rem 0.8rem 0.8rem rgb(187, 187, 187);
+    transition: .5s ease;
+}
+
+.project-link:hover {
+    color: transparent;
+    background: orangered;
+    text-shadow: .1rem .1rem .1rem black;
+    transform: scale(.95);
+    text-decoration: none;
+
+
+}
+
+.project-link a {
+    font-size: 2rem;
+    font-family: 'Bungee Spice', cursive;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    margin-right: .5rem;
+
+
+
+}
+
+/* certification section*/
+#certification {
+    width: 100vm;
+    min-height: 50vh;
+    background: url(../images/19268.jpg);
+    background-size: cover;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cer-pro {
+    font-family: 'Rubik Dirt', cursive;
+    ;
+    font-size: 2.5rem;
+    color: #333;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.all-cer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 150rem;
+    padding: 3rem;
+}
+
+.cer-img {
+    width: 35rem;
+    margin: 1rem;
+    padding: .5rem;
+    box-shadow: 0.8rem 0.8rem 0.8rem rgb(187, 187, 187);
+    background-color: #fff;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+.cer-img:hover {
+    transform: scale(1.05);
+}
+
+.cer-img img {
+    width: 100%;
+    object-fit: contain;
+    transition: .3s ease;
+    filter: saturate(.5);
+}
+
+/* contact section*/
+.contact {
+
+    min-height: 90vh;
+}
+
+.contact .heading {
+    margin-top: 3rem;
+    font-size: 6rem;
+    font-weight: 400;
+    font-family: 'Bungee Spice', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(82, 79, 79);
+    border-bottom: .5rem soild #333;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+
+
+
+}
+
+.contact .inputBox {
+    padding: 0 1rem;
+}
+
+.contact .name,
+.email,
+textarea {
+    height: 3rem;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: .1rem solid #333;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+   
+}
+
+.contact .name:focus {
+    border-bottom: .1rem solid orangered;
+}
+
+.contact .email:focus {
+    border-bottom: .1rem solid orangered;
+}
+
+.contact .name {
+    width: 45%;
+
+}
+
+textarea {
+    height: 20rem;
+    border: .1rem solid #333;
+    resize: none;
+
+}
+
+textarea:focus {
+    border: .2rem solid orangered;
+}
+
+.name-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"] {
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    font-family: 'Bungee Spice', cursive;
+    letter-spacing: .2rem;
+    color: white;
+    background: rgb(82, 79, 79);
+    text-transform: capitalize;
+    border: none;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+    color: transparent;
+    background: orangered;
+    text-shadow: .1rem .1rem .1rem black;
+    text-decoration: none;
+}
+.info .info-box{
+margin: 4.5rem 1rem;
+
+}
+.info h2{
+    font-size: 2rem;
+    color: orange;
+}
+.info h2 i{
+    padding: 0 1rem;
+    color: #333;
+}
+.info p{
+font-size: 1.8rem;
+color:#666;
+padding-left: 3.5rem;
+
+
+}
+.true-email{
+    text-transform: lowercase;
+}
+
+#footer{
+    background:#fff;
+    padding: 1.5rem 0;
+    border-top: .1rem solid rgba(51, 51, 51, .3);
+   
+}
+#footer h1{
+    color: #333;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-bottom:0 ;
+    letter-spacing: .1rem;
+}
+
+#footer h1 span{
+    color: orangered;
+}
+
+
+/*media queries*/
+@media (max-width:800px) {
+    html {
+        font-size: 55%;
+        overflow-x: hidden;
+    }
+
+
+    .header .fa-bars {
+        display: block;
+        position: relative;
+
+    }
+
+    .navbar {
+
+        position: fixed;
+        top: -120%;
+        margin: 12.5% 49% 20% 21%;
+        height: calc(100vh-5.2rem);
+        width: 100vm;
+        background: #ffff;
+        justify-items: center;
+        border-top: .1rem solid rgba(51, 51, 51, .3);
+    }
+
+    .navbar ul {
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+        justify-content: center;
+
+    }
+
+    .navbar ul li {
+        margin: 1.5rem 0;
+    }
+
+    .navbar ul li a {
+        font-size: 2.5rem;
+    }
+
+    .header img {
+        padding-right: 0px;
+    }
+
+    .nav-toggle {
+        top: 5.2rem
+    }
+
+    #projects h2 {
+        font-size: 3rem;
+    }
+
+    #certification h2 {
+        font-size: 3rem;
+    }
+
+    .cer-pro {
+        font-size: 1.3rem;
+    }
+
+    #about {
+        padding-left: 4rem;
+
+    }
+
+    .home {
+        background-position: center;
+    }
+
+    .about-content-text {
+        padding: 0 13rem 0 6rem;
+        font-size: 1rem;
+    }
+
+    .about-skills {
+        padding: 0 13rem 0 6rem;
+        font-size: 1rem;
+    }
+
+    .resume {}
+
+    #projects {
+
+        background-position: center;
+    }
+
+    #certification {
+        background-position: center;
+    }
+    .contact .heading {
+        margin-top: 3rem;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+}
